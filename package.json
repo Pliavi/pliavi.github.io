@@ -1,0 +1,16 @@
+{
+  "name": "pliavi.github.io",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.10.51",
+    "netlify-cms-widget-youtube": "^0.3.0"
+  }
+}

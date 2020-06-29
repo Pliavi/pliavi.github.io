@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: pliavi/pliavi.github.io
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projetos"
+    folder: "content/portfolio"
+    create: true
+    slug: "/portfolio/{{slug}}"
+    fields: 
+      - {label: "Título do cabuloso", name: "title", widget: "string"}
+      - {label: "Data do sucesso", name: "date", widget: "date"}
+      - {label: "Fala sobre o bichão", name: "body", widget: "markdown"}
+      - {label: "Imagem do monstro", name: "preview", widget: "image", required: false }
+      - {label: "Link da felicidade", name: "url", widget: "string"}
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título cabuloso", name: "title", widget: "string"}
+      - {label: "Resumo TOP", name: "excerpt", widget: "string"}
+      - {label: "Data do sucesso", name: "date", widget: "date"}
+      - {label: "Lança a braba", name: "body", widget: "markdown"}
+      - {label: "Imagem do monstro", name: "cover_image", widget: "image", required: false }
