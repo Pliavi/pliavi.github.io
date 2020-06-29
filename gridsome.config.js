@@ -8,7 +8,7 @@ module.exports = {
   siteName: 'Pliavi',
    plugins: [
     {
-      use: `gridsome-plugin-netlify-cms`
+      use: `gridsome-plugin-netlify-cms`,
       options: {
       	plugins: [`netlify-cms-widget-youtube`]
       }
