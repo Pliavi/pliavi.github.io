@@ -6,7 +6,7 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "projects"
+  - name: "Project"
     label: "Projetos"
     folder: "content/portfolio"
     create: true
@@ -17,9 +17,9 @@ collections:
       - {label: "Fala sobre o bichão", name: "body", widget: "markdown"}
       - {label: "Imagem do monstro", name: "preview", widget: "image", required: false }
       - {label: "Link da felicidade", name: "url", widget: "string"}
-  - name: "posts"
+  - name: "BlogPost"
     label: "Posts"
-    folder: "content/posts"
+    folder: "content/blog"
     create: true
     slug: "{{slug}}"
     fields:

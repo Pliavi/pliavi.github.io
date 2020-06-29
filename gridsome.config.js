@@ -10,21 +10,23 @@ module.exports = {
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
-      	plugins: [`netlify-cms-widget-youtube`]
+        plugins: [`netlify-cms-widget-youtube`],
       }
     },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Post',
-        path: './content/posts/**/*.md',
-      }
-    },
+    // {
+    //   use: '@gridsome/source-filesystem',
+    //   options: {
+    //     typeName: 'BlogPost',
+    //     create: true
+    //     path: './content/blog/**/*.md',
+    //   }
+    // },
   ],
   transformers: {
   	remark: {}
   },
-  templates: {
-  	Post: "/blog/:title"
-  }
+  // templates: {
+  //   BlogPost: "/blog/:title",
+  //   Projects: "/portfolio/:title"
+  // }
 }
