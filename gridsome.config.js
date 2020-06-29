@@ -12,6 +12,19 @@ module.exports = {
       options: {
       	plugins: [`netlify-cms-widget-youtube`]
       }
-    } 
-  ]
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post',
+        path: './content/posts/**/*.md',
+      }
+    },
+  ],
+  transformers: {
+  	remark: {}
+  },
+  templates: {
+  	Post: "/blog/:title"
+  }
 }
